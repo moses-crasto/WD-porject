@@ -1,0 +1,141 @@
+.mane {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  border: none;
+  padding: 0px;
+}
+
+.container {
+  /* scroll-snap-type: y mandatory; */
+  /* border: none; */
+  /* overflow-y: auto; */
+  /* overflow-x: hidden; */
+  width: 100%;
+  height: 92vh;
+}
+
+.container::-webkit-scrollbar {
+  width: 0;
+}
+
+.container > div {
+  /* scroll-snap-align: start; */
+}
+
+.car1 {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/roadster.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 92vh;
+
+  justify-content: space-between;
+}
+
+.car2 {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/cybertruck.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 92vh;
+
+  justify-content: space-between;
+}
+
+.title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  font-size: 72px;
+  font-weight: 900;
+
+  color: #fff;
+}
+
+.description {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  padding: 12px 20px;
+  margin-right: 35px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+  background-color: #f3f3f3;
+  border: none;
+  font-size: larger;
+  font-weight: 600;
+
+  align-self: flex-end;
+
+  cursor: pointer;
+
+  transition: all 300ms ease-in-out;
+}
+
+.button:hover {
+  background-color: #534747;
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.specs {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  animation: move 1s ease 0s 1 reverse none;
+}
+
+.item {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  line-height: 400%;
+
+  color: darkgray;
+
+  transition: color 200ms ease-in-out;
+}
+
+.item:hover {
+  color: rgb(226, 215, 192);
+}
+
+.larger {
+  font-size: 80px;
+}
+
+.smaller {
+  font-size: 40px;
+}
+
+@keyframes move {
+  from {
+    opacity: 1;
+    top: 0px;
+  }
+  to {
+    opacity: 0;
+    top: 150px;
+  }
+}

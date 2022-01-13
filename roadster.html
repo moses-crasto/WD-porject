@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/roadster.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;900&display=swap"
+      rel="stylesheet"
+      />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+      $(document).ready(function(){
+        $("#huu").click(function(){
+          $("#allspecs").slideToggle("slow");
+        });
+      });
+      $(document).ready(function() {
+        $("#but").click(function() {
+            $(document).scrollTop($(document).height());
+        });
+    });
+    </script>
+    <title>Roadster</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="images/tesla-logo.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/roadster.html">Roadster</a></li>
+          <li><a href="/cybertruck.html">Cybertruck</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <span class="title">Roadster</span>
+      <button id="but"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+      </svg></button>
+      <div class="description">
+        <div class="specs">
+          <div class="item">
+            <span class="larger">1.9s</span>
+            <span class="smaller">0-60mph</span>
+          </div>
+          <div class="item">
+            <span class="larger">+250mph</span>
+            <span class="smaller">Top Speed</span>
+          </div>
+          <div class="item">
+            <span class="larger">620mi</span>
+            <span class="smaller">Range</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <span id="huu" style="font-size: 40px;">Base Specs</span>
+      <div id="allspecs">
+        <ul>
+          <li>
+            <span>Acceleration 0-60 mph</span>
+            <span>1.9sec</span>
+          </li>
+          <li>
+            <span>Acceleration 0-100 mph</span>
+            <span>4.2sec</span>
+          </li>
+          <li>
+            <span>Acceleration 1/4 mile</span>
+            <span>8.8sec</span>
+          </li>
+          <li>
+            <span>Top Speed</span>
+            <span>Over 250 mph</span>
+          </li>
+          <li>
+            <span>Wheel Torque</span>
+            <span>10,000 Nm</span>
+          </li>
+          <li>
+            <span>Mile Range</span>
+            <span>620 miles</span>
+          </li>
+          <li>
+            <span>Seating</span>
+            <span>4</span>
+          </li>
+          <li>
+            <span>Drive</span>
+            <span>All-Wheel Drive</span>
+          </li>
+          <li>
+            <span>Base Price</span>
+            <span>$200,000</span>
+          </li>
+          <li>
+            <span>Base Reservation</span>
+            <span>$50,000</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="info1">
+        <span class="big"> Designed for Performance and Aero Efficiency </span>
+        <span class="small">
+          As an all-electric supercar, Roadster maximizes the potential of
+          aerodynamic engineering—with record-setting performance and
+          efficiency.
+        </span>
+      </div>
+
+      <div class="info2">
+        <img class="img-interior" src="/images/roadster-interior.jpg" alt="" />
+        <span class="big">Interior</span>
+        <span class="small">
+          The first supercar to set every performance record and still fit
+          seating for four.
+        </span>
+      </div>
+
+      <div class="info3">
+        <span class="big">Glass Roof </span>
+        <span class="small"
+          >A lightweight, removable Glass Roof stores in the trunk for an
+          open-air, convertible driving experience.</span
+        >
+      </div>
+    </section>
+    <div class="footer">
+      <form action="roadster.html" method="post" id="signup">
+				<h1>Order Now</h1>
+				<div class="field">
+					<label for="fname">First Name:</label>
+					<input type="text" id="fname" name="fname" placeholder="Enter your first name" />
+					<small></small>
+				</div>
+        <div class="field">
+					<label for="lname">Last Name:</label>
+					<input type="text" id="lname" name="lname" placeholder="Enter your last name" />
+					<small></small>
+				</div>
+				<div class="field">
+					<label for="email">Email:</label>
+					<input type="text" id="email" name="email" placeholder="Enter your email address" />
+					<small></small>
+				</div>
+				<div class="field">
+					<button type="submit" class="full">Submit</button>
+				</div>
+			</form>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
